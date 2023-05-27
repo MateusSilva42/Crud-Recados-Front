@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Login - Recados</title>
+  </head>
+  <body>
+    <main>
+        <h1>Recados</h1>
+
+        <img id="login-icon" src="images/note-icon.jpg" alt="ícone de nota">
+
+        <h3>Faça login para gerenciar seus recados.</h3>
+    
+        <form id="login-form">
+          <div id="form-container">
+            <div class="form-input">
+              <input
+                type="email"
+                name="email-login"
+                id="email-login"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+    
+            <div class="form-input">
+              <input
+                type="password"
+                name="password-login"
+                id="password-login"
+                placeholder="Digite sua senha"
+                required
+              />
+            </div>
+    
+            <div class="form-input">
+                <button type="submit" class="btn-default form-input" id="btn-login">Login</button>
+                <button class="btn-default form-input"> Cadastre-se</button>
+            </div>
+          </div>
+        </form>
+    </main>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/apiConfig.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
