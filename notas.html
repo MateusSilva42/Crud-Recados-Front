@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/table-notes.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/table-notes.css" />
     <title>Minhas notas</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <button id="exit">Sair</button>
+      <button id="exit">Sair</button>
     </header>
     <main>
-        <h1>Minhas notas</h1>
+      <h1>Minhas notas</h1>
 
-        <div id="my-notes">
-            <table id="notes-table">
-                <!-- Notas do usuario -->
-            </table>
-        </div>
+      <div id="my-notes">
+        <table id="notes-table">
+          <!-- Notas do usuario -->
+        </table>
+      </div>
 
-        <div>
-            <button class="btn-default">Cadastrar novo recado</button>
-        </div>
+      <div>
+        <button class="btn-default" id="new-note-btn">Cadastrar novo recado</button>
+      </div>
 
+      <div id="pages-btn">
+        <!-- Botões das páginas -->
+      </div>
     </main>
-    
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./js/apiConfig.js"></script>
     <script src="js/notas.js"></script>
-</body>
+  </body>
 </html>

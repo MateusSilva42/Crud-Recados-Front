@@ -1,4 +1,5 @@
 const formLogin = document.querySelector("#login-form");
+const signUpBtn = document.querySelector('#sign-up-btn')
 
 formLogin.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -41,6 +42,10 @@ async function login(loginData) {
     return false;
   }
 }
+
+signUpBtn.addEventListener('click', ()=>{
+  alert('Em breve. Por enquanto, cadastros apenas pela API ;)')
+})
 
 function isLogged(){
   const logged = localStorage.getItem('currentUser')
